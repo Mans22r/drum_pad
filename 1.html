@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Pad</title>
+</head>
+<body>
+    <h1 class="head">DRUM PAD</h1>
+    <div class="card">
+        <div>
+            <button type="btn1" onclick="play1()">A</button>
+            <audio id="audio1" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+
+            <button type="btn2" onclick="play2()">B</button>
+            <audio id="audio2" src="./crash.mp3"></audio>
+        
+            <button type="btn3" onclick="play3()">C</button>
+            <audio id="audio3" src="./kick-bass.mp3"></audio>
+        </div>
+
+        <div>
+            <button type="btn4" onclick="play4()">D</button>
+            <audio id="audio4" src="./snare.mp3"></audio>
+       
+            <button type="btn5" onclick="play5()">E</button>
+            <audio id="audio5" src="./tom-1.mp3"></audio>
+       
+            <button type="btn6" onclick="play6()">F</button>
+            <audio id="audio6" src="./tom-2.mp3"></audio>
+        </div>
+
+        <div>
+            <button type="btn7" onclick="play7()">G</button>
+            <audio id="audio7" src="./tom-3.mp3"></audio>
+        
+            <button type="btn8" onclick="play8()">H</button>
+            <audio id="audio8" src="./tom-4.mp3"></audio>
+        
+            <button type="btn9" onclick="play9()">I</button>
+            <audio id="audio9" src="./crash.mp3"></audio>
+        </div>
+    </div>
+
+    <style>
+        head {
+            text-align: center;
+        }
+
+        body {
+            text-align: center;
+            margin: 10%;
+            column-span: all;
+        }
+        .btn1 {
+            padding: 32px 16px;
+            position: relative;
+            left: 30px;
+        }
+
+
+    </style>
+
+    <script>
+        function play1() {
+          var audio = document.getElementById("audio1");
+          audio.play();
+        }
+
+        function play2() {
+          var audio = document.getElementById("audio2");
+          audio.play();
+        }
+
+        function play3() {
+          var audio = document.getElementById("audio3");
+          audio.play();
+        }
+
+        function play4() {
+          var audio = document.getElementById("audio4");
+          audio.play();
+        }
+
+        function play5() {
+          var audio = document.getElementById("audio5");
+          audio.play();
+        }
+
+        function play6() {
+          var audio = document.getElementById("audio6");
+          audio.play();
+        }
+
+        function play7() {
+          var audio = document.getElementById("audio7");
+          audio.play();
+        }
+
+        function play8() {
+          var audio = document.getElementById("audio8");
+          audio.play();
+        }
+
+        function play9() {
+          var audio = document.getElementById("audio9");
+          audio.play();
+        }
+
+    </script>
+</body>
+</html>
